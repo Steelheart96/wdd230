@@ -1,0 +1,12 @@
+@media (min-width: 32.5em) {
+    header{
+        grid-gap: 0rem;
+    }
+    main hr {
+        padding: .05rem;
+        background-color: black;
+    }
+    footer {
+        padding: 16px;
+    }
+}
