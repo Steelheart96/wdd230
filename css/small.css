@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Nunito:ital,wght@1,300&display=swap');
+
+h1 h2 {
+    font-family: 'Merriweather';
+}
+p{
+    font-family: 'Nunito';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 1rem;
+}
+
+/* Content Portal */
+
+#portalContent {
+    margin: 0 auto;
+    padding: 1%;
+    max-width: 600px;
+}
+#portalHeader {
+    background-color: rgb(72, 135, 207);
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: -1px 1px 33px 1px rgba(0,0,0,0.75);
+    color: white;
+}
+#portalFooter {
+    margin-top: 3%;
+    background-color: rgb(72, 135, 207);
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: -1px 1px 33px 1px rgba(0,0,0,0.75);
+    font-weight: 600;
+    color: white;
+}
+
+/* Design Principles Document */
+
+.principles02Content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1%;
+    max-width: 65rem;
+}
+#principles02Main hr {
+    padding: .1rem;
+    margin-bottom: .9rem;
+    border-radius: .3rem;
+}
+#principles02Header {
+    background-color: rgb(72, 135, 207);
+    text-align: center; 
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: -1px 1px 33px 1px rgba(0,0,0,0.75);
+    color: white;
+    flex-basis: 100%;
+}
+#principles02Header p {
+    font-weight: 800;
+    font-size: large;
+}
+.principles02Content div{
+    padding: 1rem;
+}
+#principles02Main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+#principles02Main div {
+    flex-basis: 25%;
+    background-color: rgb(187, 187, 187);
+    margin: 0 1rem 1rem 1rem;
+    border-radius: .5rem;
+    box-shadow: 0px 1px 24px 2px rgba(0,0,0,0.22);
+}
+#principles02Main div:hover {
+    animation-name: card-animation-in;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+#principles02Main div:not(:hover){
+    animation-name: card-animation-out;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+#principles02Main div h2 {
+    border-radius: .3rem;
+    padding: .5rem;
+    margin: .5rem;
+}
+.mobilescreenshot {
+    width:15rem;
+}
+#principles02Main div p {
+    padding: .5rem;
+}
+#principles02Main div a {
+    display: inline-block;
+    margin: .5rem;
+}
+#principles02Footer {
+    background-color: rgb(72, 135, 207);
+    text-align: center; 
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: -1px 1px 33px 1px rgba(0,0,0,0.75);
+    color: white;
+    flex-basis: 100%;
+}
+@keyframes card-animation-in {
+    0% {
+        transform: translateY(0%);
+        box-shadow: 1px 1px 4px 1px #888;
+    }
+    100% {
+        transform: translateY(-3%);
+        box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.596);
+    }
+}
+@keyframes card-animation-out {
+    0% {
+        transform: translateY(-3%);
+        box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.596);
+    }
+    100% {
+        transform: translateY(0%);
+        box-shadow: 1px 1px 4px 1px #888;
+    }
+}

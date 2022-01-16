@@ -1,12 +1,33 @@
+/* Content Portal*/
 @media (min-width: 32.5em) {
-    header{
+    #portalHeader{
         grid-gap: 0rem;
     }
-    main hr {
+    #portalMain hr {
         padding: .05rem;
         background-color: black;
     }
-    footer {
+    #portalFooter {
         padding: 16px;
+    }
+}
+
+/* Design Principles Document */
+
+@media (min-width: 41em){
+    #whiteSpace {
+        flex-basis: 60%;
+    }
+    #whiteSpace .mobilescreenshot {
+        width:30rem;
+    }
+}
+
+@media (min-width: 70em){
+    #whiteSpace {
+        flex-basis: 25%;
+    }
+    #whiteSpace .mobilescreenshot {
+        width:15rem;
     }
 }
