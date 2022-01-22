@@ -1,0 +1,13 @@
+/* Content Portal*/
+@media (min-width: 32.5em) {
+    #portalHeader{
+        grid-gap: 0rem;
+    }
+    #portalMain hr {
+        padding: .05rem;
+        background-color: black;
+    }
+    #portalFooter {
+        padding: 16px;
+    }
+}
