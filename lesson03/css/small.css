@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Nunito:ital,wght@1,300&display=swap');
+
+h1 h2 {
+    font-family: 'Merriweather';
+}
+p{
+    font-family: 'Nunito';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 1rem;
+}
