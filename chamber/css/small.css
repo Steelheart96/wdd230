@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Nunito:ital,wght@1,300&display=swap');
+
+/* Page Default Settings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 1rem;
+}
+
+h1, h2 {
+    font-family: 'Merriweather';
+    color: midnightblue;
+}
+p{
+    font-family: 'Nunito';
+    color: rgb(0, 126, 78);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: mediumseagreen;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    color: midnightblue;
+}
+
+
+/* FIX HEADER */
+
+
+/* Logo and name */
+.name-and-logo {
+    display: grid;
+}
+.name-and-logo h1 {
+    grid-column: 2;
+}
+.name-and-logo span {
+    font-size: 60%;
+}
+
+/*navigation */
+nav {
+	max-width: 760px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+/* Responsive Nav*/
+.navigation {
+    display: flex;
+	list-style: none;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.navigation li {
+	display: none;
+    padding: 5%;
+}
+.navigation a {
+    text-align: center;
+	display: block;
+	text-decoration: none;
+}
+
+.responsive li {
+	display: block;
+}
+
+/* Menu Button*/
+.nav-menu {
+    list-style: none;
+    grid-column: 3/4;
+}
+.nav-menu li {
+    display: block;
+    text-align: center;
+}
+.menu-button {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(51, 255, 177);
+}
+
+/* Social Media */
+.social-media {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    list-style: none;
+}
+.social-media img{
+    width: 2em;
+}
+
+/* Current Date Holder */
+.current-date {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Main grid and content */
+
+main {
+    display: grid;
+}
+
+main div {
+    margin: .7%;
+    background: rgba(128, 128, 128, 0.219);
+    padding: 25px;
+}
+
+.name-and-call{
+    grid-row: 1/2;
+}
+.event {
+    grid-row: 2/3;
+}
+.weather {
+    grid-row: 3/4;
+}
+.news {
+    grid-row: 4/5;
+}
+.spotlights {
+    grid-row: 5/6;
+}
+.join {
+    visibility: hidden;
+}
+.spotlight3 {
+    visibility: hidden;
+}
+
+footer {
+    padding-top: 1%;
+    display: grid;
+    grid-template-rows: 1fr .2fr;
+    background-color: mediumseagreen;
+    color: rgb(102, 54, 0);
+    justify-items: center;
+}
+.address-info, .contact-info {
+    text-align: center;
+}
+
+/* hidden content */
+.hidden {
+    display: none;
+}
