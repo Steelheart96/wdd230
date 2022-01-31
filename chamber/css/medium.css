@@ -4,22 +4,33 @@
     header {
         justify-content: center;
     }
+
+    /* */
+    .name-and-logo h1 {
+        font-size: 2.5em;
+    }
+    .name-and-logo span {
+        font-size: 60%;
+    }
+    .header-logo {
+        max-width: 8em;
+    }
+
+    /* Navigation */ 
     .navigation {
         grid-column: 1/2;
-        grid-row: 2;
         margin-left: 5em;
     }
     .social-media {
         grid-column: 2/3;
-        grid-row: 1;
     }
     .menu-button {
         grid-column: 3/4;
-        grid-row: 1;
     }
     .social-media img{
         width: 3em;
     }
+
     /* main content */
 
     main {
