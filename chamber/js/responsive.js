@@ -1,8 +1,12 @@
 const menubutton = document.querySelector('.menu-button');
 const pagenav = document.querySelector('.navigation');
+const ham = document.querySelector('.menu-button .ham');
+const ex = document.querySelector('.menu-button .ex');
 
 menubutton.onclick = () => {
     pagenav.classList.toggle('responsive');
+    ham.classList.toggle('responsive');
+    ex.classList.toggle('responsive')
 };
 
 
