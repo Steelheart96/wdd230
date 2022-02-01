@@ -134,10 +134,10 @@ a:hover::after {
     grid-column: 2/3;
     display: flex;
     list-style: none;
-
 }
 .social-media img{
-    width: 2em;
+    padding: 1em;
+    max-width: 2.5em;
 }
 
 /* Current Date Holder */
