@@ -1,12 +1,14 @@
+
+// Menu
 const menubutton = document.querySelector('.menu-button');
 const pagenav = document.querySelector('.navigation');
 const ham = document.querySelector('.menu-button .ham');
-const ex = document.querySelector('.menu-button .ex');
+const menuex = document.querySelector('.menu-button .ex');
 
 menubutton.onclick = () => {
     pagenav.classList.toggle('responsive');
     ham.classList.toggle('responsive');
-    ex.classList.toggle('responsive')
+    menuex.classList.toggle('responsive')
 };
 
 let buttonMaxWidth = 1199;
@@ -15,11 +17,19 @@ window.onresize = () => {
     if (window.innerWidth < buttonMaxWidth){
         pagenav.classList.add('responsive');
         ham.classList.remove('responsive');
-        ex.classList.add('responsive')
+        menuex.classList.add('responsive');
     };
     if (window.innerWidth > buttonMaxWidth){
         pagenav.classList.remove('responsive');
         ham.classList.remove('responsive');
-        ex.classList.add('responsive')
+        menuex.classList.add('responsive');
     };
+};
+
+// Banner
+
+const banner = document.querySelector('.banner');
+const bannerex = document.querySelector('.close-banner');
+bannerex.onclick = () => {
+    banner.classList.add('responsive');
 };
