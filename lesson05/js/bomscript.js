@@ -10,12 +10,13 @@ btnInput.addEventListener("click", () => {
 
 		let exbtn = document.createElement("button");
 		exbtn.textContent = "❌";
+        exbtn.ariaLabel = `Remove ${showInput}`
 
 		exbtn.addEventListener("click", () => {listOutput.removeChild(newLi);});
 
 		newLi.append(showInput, exbtn);
 		listOutput.appendChild(newLi);
-        
+
 		usrInput.value = "";
 	}
 });
