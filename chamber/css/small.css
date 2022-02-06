@@ -192,14 +192,15 @@ main div {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    padding-top: 3em;
+    padding-bottom: 3em;    
 }
 .name-and-call:hover {
     box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.603);
 }
 .name-and-call h2 {
     color: white;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .event {
