@@ -182,30 +182,71 @@ main {
 
 main div {
     margin: .7%;
-    background: rgba(128, 128, 128, 0.219);
-    padding: 25px;
 }
 
 .name-and-call{
-    grid-row: 1/2;
+    background-image: url("../images/ranchohero.jpg");
+    background-color: rgba(0, 0, 0, 0.438); /* Tint color */
+    background-blend-mode: multiply;
+    box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.281);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+.name-and-call:hover {
+    box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.603);
+}
+.name-and-call h2 {
+    color: white;
+    font-size: 3em;
+}
+
 .event {
     grid-row: 2/3;
+    text-align: center;
+    background-color: rgb(204, 174, 135);
+    box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.281);
+    padding: 1em;
 }
+
 .weather {
     grid-row: 3/4;
+    text-align: center;
+    background-color: rgb(204, 174, 135);
+    box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.281);
+    padding: 1em;
+}
+.weather:hover {
+    box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.603);
 }
 .news {
     grid-row: 4/5;
+    text-align: center;
+    background-color: rgb(204, 174, 135);
+    box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.281);
+    padding: 1em;
+}
+
+.news:hover {
+    box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.603);
 }
 .spotlights {
     grid-row: 5/6;
 }
-.join {
-    visibility: hidden;
+.join, .spotlight3 {
+    display: none;
 }
-.spotlight3 {
-    visibility: hidden;
+
+.spotlight3, .spotlight2 ,.spotlight1, .join {
+    margin: 1em;
+    text-align: center;
+    background-color: rgb(204, 174, 135);
+    box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.281);
+    padding: 2em;
+}
+.spotlight3:hover, .spotlight2:hover, .spotlight1:hover, .join:hover,.event:hover {
+    box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.603);
 }
 
 footer {
