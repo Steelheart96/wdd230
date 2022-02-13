@@ -185,7 +185,10 @@ main div {
 }
 
 .name-and-call{
-    background-image: url("../images/ranchohero.jpg");
+    background-image: url("../images/ranchohero.png");
+    /* Instead of creating 3 images, I used the line below. */
+    background-size:cover;
+    background-position-y: 30%;
     background-color: rgba(0, 0, 0, 0.438); /* Tint color */
     background-blend-mode: multiply;
     box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.281);
@@ -266,3 +269,12 @@ footer {
 .hidden {
     display: none;
 }
+
+/* @keyframes background-move {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 300% 0%;
+    }
+} */
