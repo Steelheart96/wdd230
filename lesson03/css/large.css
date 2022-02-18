@@ -1,0 +1,5 @@
+@media (min-width: 30em) {
+    nav ul {
+        flex-direction: row;
+    }
+}
