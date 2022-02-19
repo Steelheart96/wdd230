@@ -17,6 +17,7 @@
     <script defer src="js/date.js"></script>
     <script defer src="js/responsive.js"></script>
     <script defer src="js/banner.js"></script>
+    <script defer src="js/windchill.js"></script>
   </head>
   <body>
     <div class="banner">
@@ -32,7 +33,7 @@
           <img
             class="header-logo"
             aria-hidden="true"
-            src="images/ranchocommerce.png"
+            src="images/ranchocommerce.webp"
           />
         </a>
         <h1>Rancho<br /><span>Chamber of Commerce</span></h1>
@@ -40,12 +41,12 @@
       <ul class="social-media">
         <li>
           <a target="_blank" href="https://www.facebook.com/"
-            ><img src="images/facebook.png"
+            ><img src="images/facebook.webp"
           /></a>
         </li>
         <li>
           <a target="_blank" href="https://www.youtube.com/"
-            ><img src="images/youtube.png"
+            ><img src="images/youtube.webp"
           /></a>
         </li>
       </ul>
@@ -78,16 +79,27 @@
       </div>
       <div class="weather">
         <h2>Weather</h2>
-        <p id="weather-message">
-          Message of the day: To much heat and not enough wind.
-        </p>
-        <p id="weather-degrees">90&deg;</p>
+        <div class="icon-deg">
+          <img src="images/weathericon.png">
+          <p id="weather-degrees"><span>30</span>&deg;</p>
+        </div>
+        <p>Cloudy</p>
+        <hr>
+        <p id="wind-speed">Wind Speed: <span>4</span> mph</p>
+        <p id="wind-chill">Wind Chill: <span></span></p>
       </div>
       <div class="join">
         <h2>Come Join our Chamber community!</h2>
         <a href="#">Join!</a>
       </div>
       <div class="name-and-call">
+        <picture>
+          <img src="images/ranchohero-500.webp"
+              srcset="images/ranchohero-500.webp 500w,
+                      images/ranchohero-800.webp 800w,
+                      images/ranchohero-1000.webp 1000w"
+              alt="Hero Image" >
+        </picture>
         <h2>The Rancho Chamber of Commerce</h2>
       </div>
 
@@ -133,7 +145,7 @@
     </main>
 
     <footer>
-      <img class="footer-logo" src="images/ranchocommerce.png" />
+      <img class="footer-logo" src="images/ranchocommerce.webp" />
       <div class="address-info">
         <h2>Rancho Chamber of Commerce</h2>
         <p>Rancho Summit Park</p>

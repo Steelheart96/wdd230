@@ -185,25 +185,32 @@ main div {
 }
 
 .name-and-call{
-    background-image: url("../images/ranchohero.webp");
-    /* Instead of creating 3 images, I used the line below. */
-    background-size:cover;
-    background-position-y: 30%;
-    background-color: rgba(0, 0, 0, 0.438); /* Tint color */
-    background-blend-mode: multiply;
+    /* background-image: url("../images/ranchohero.webp"); */
+    /* Instead of creating 3 images, I used the line below and position in medium and large css.*/
+    /* background-size:cover; */
+    /* background-position-y: 30%; */
+    /* background-color: rgba(0, 0, 0, 0.438); Tint color */
+    /* background-blend-mode: multiply; */
     box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.281);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 3em;
-    padding-bottom: 3em;    
+    position: relative;
+    overflow: hidden;
 }
 .name-and-call:hover {
     box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.603);
 }
 .name-and-call h2 {
     color: white;
-    font-size: 2em;
+    font-size: 1em;
+    position: absolute;
+}
+.name-and-call picture img {
+    object-fit: contain;
+    filter: brightness(70%);
+    width: 100%;
+    height: 100%;
 }
 
 .event {
@@ -223,6 +230,17 @@ main div {
 }
 .weather:hover {
     box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.603);
+}
+.weather > p {
+    padding: .1em;
+}
+.icon-deg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon-deg p {
+    font-size: 2em;
 }
 .news {
     grid-row: 4/5;
