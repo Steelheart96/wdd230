@@ -185,7 +185,7 @@ main div {
 }
 
 .name-and-call{
-    background-image: url("../images/ranchohero.png");
+    background-image: url("../images/ranchohero.webp");
     /* Instead of creating 3 images, I used the line below. */
     background-size:cover;
     background-position-y: 30%;
