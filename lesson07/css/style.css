@@ -10,4 +10,10 @@ body {
 img {
     max-width: 100%;
     padding: .5em;
+    filter: grayscale(1) brightness(0.5) opacity(0.2);
+    transition: filter 2s ease;
+}
+
+img.loaded {
+    filter: grayscale(0) brightness(1) opacity(1);
 }

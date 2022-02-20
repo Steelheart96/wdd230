@@ -1,14 +1,5 @@
 const imgTLoad = document.querySelectorAll('img[data-src]');
 
-function preloadImage(img) {
-    const src = img.getAttribute('data-src');
-    if (!src) {
-        return;
-    }
-    
-    img.src = src;
-}
-
 const imageOptions = {
     threshold: 0,
     rootMargin: '0px 0px 300px 0px'
@@ -29,3 +20,13 @@ const imageObserver = new IntersectionObserver((entries, imageObserver) => {
 imgTLoad.forEach(image => {
     imageObserver.observe(image)
 });
+
+function preloadImage(img) {
+    const src = img.getAttribute('data-src');
+    if (!src) {
+        return;
+    }
+    
+    img.src = src;
+    img.classList.add('loaded')
+}
