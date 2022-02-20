@@ -176,11 +176,11 @@ a:hover::after {
 
 /* Main grid and content */
 
-main {
+main#portal {
     display: grid;
 }
 
-main div {
+main#portal div {
     margin: .7%;
 }
 
@@ -302,4 +302,50 @@ footer {
 /* hidden content */
 .hidden {
     display: none;
+}
+
+/* Discover Page */
+.img-t-load {
+    max-width: 100%;
+    padding: .5em;
+    filter: brightness(.5) grayscale(1) opacity(0.9) blur(10px);
+    transition: filter 1s ease;
+}
+
+.loaded {
+    filter: brightness(1) grayscale(0) opacity(1) blur(0px);
+}
+
+main#discover {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2%;
+    justify-content: center;
+}
+
+main#discover picture {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-t-load {
+    filter: brightness(1);
+    transition: filter 1s ease;
+    border-radius: 1em;
+}
+main#discover picture:hover .img-t-load {
+    filter: brightness(.4);
+}
+
+.text-t-load {
+    position: absolute;
+    transform: translateY(0%) translateX(15%);
+    transition: transform .5s ease;
+    color: white;
+    pointer-events: none;
+}
+main#discover picture:hover .text-t-load {
+    transform: translateY(-600%) translateX(15%);
 }
