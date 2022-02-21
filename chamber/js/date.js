@@ -4,14 +4,19 @@ datemod.textContent = `Last Modified: ${document.lastModified}`;
 const copyright = document.querySelector('#copyright');
 copyright.textContent = new Date().getFullYear();
 
-const displayDate = document.querySelector('.current-date');
+const displayDate = document.querySelector('#date');
 const date = new Date()
-displayDate.textContent = Intl.DateTimeFormat('en-Us', { dateStyle: 'full'}).format(date);
+const latestDate = Intl.DateTimeFormat('en-Us', { dateStyle: 'full'}).format(date)
+displayDate.textContent = latestDate;
 
+let myStorage = window.sessionStorage;
 
-// const currentDay = date.getDay();
+const lastActive = myStorage.getItem('last-active');
+let activeP = document.querySelector('#last-active')
+if (lastActive == !undefined) {
+    activeP.textContent = ``
+} else {
+    activeP.textContent = `Last Active: ${lastActive}`
+}
 
-// if ( currentDay != 1 && currentDay != 2) {
-//     const banner = document.querySelector('.banner');
-//     banner.classList.add('responsive');
-// };
+myStorage.setItem('last-active', latestDate)

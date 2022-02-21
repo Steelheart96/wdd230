@@ -149,10 +149,16 @@ a:hover::after {
     outline-style: solid;
     outline-color: rgb(0, 126, 78);
     background-color: rgba(0, 0, 0, 0.205);
-    color: rgb(51, 255, 177);
     padding: .2em;
     margin: 1em;
     width: 100%;
+    
+}
+#date {
+    color: rgb(51, 255, 177);
+}
+#last-active {
+    color: rgb(44, 209, 146);
 }
 
 /* Social Media */
