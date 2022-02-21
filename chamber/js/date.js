@@ -13,7 +13,7 @@ let myStorage = window.sessionStorage;
 
 const lastActive = myStorage.getItem('last-active');
 let activeP = document.querySelector('#last-active')
-if (lastActive == !undefined) {
+if (lastActive == !null) {
     activeP.textContent = ``
 } else {
     activeP.textContent = `Last Active: ${lastActive}`
