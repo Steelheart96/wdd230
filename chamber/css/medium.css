@@ -101,11 +101,12 @@
         color: rgb(0, 75, 46);
     }
 
+    /* Discover content */
     .img-t-load {
         filter: brightness(1);
         transition: filter 1s ease;
     }
-    main#discover picture:hover .img-t-load {
+    main#discover picture:hover .img-t-load, main#thanks picture:hover .img-t-load {
         filter: brightness(.4);
     }
     .text-t-load {
@@ -116,7 +117,7 @@
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
-    main#discover picture:hover .text-t-load {
+    main#discover picture:hover .text-t-load, main#thanks picture:hover .text-t-load {
         top:3em;
     }
     .text-t-load>p>a {

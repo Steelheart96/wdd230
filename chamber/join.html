@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Assignment 08, Chamber of Commerce—Join, for Eric Woll in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Join - Rancho Chamber of Commerce</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/date.js"></script>
+    <script defer src="js/responsive.js"></script>
+    <script defer src="js/banner.js"></script>
+    <script defer src="js/imageloader.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <h2>
+          🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.!
+        </h2>
+        <a aria-label="Close Banner" class="close-banner" href="#">✖</a>
+      </div>
+  
+      <header>
+        <div class="name-and-logo">
+          <a href="../chamber/">
+            <img
+              class="header-logo"
+              aria-hidden="true"
+              src="images/ranchocommerce.webp"
+            />
+          </a>
+          <h1>Rancho<br /><span>Chamber of Commerce</span></h1>
+        </div>
+        <ul class="social-media">
+          <li>
+            <a target="_blank" href="https://www.facebook.com/"
+              ><img src="images/facebook.webp"
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.youtube.com/"
+              ><img src="images/youtube.webp"
+            /></a>
+          </li>
+        </ul>
+        <ul class="nav-menu">
+          <li>
+            <a class="menu-button" href="#">
+                <span class="ham">☰</span><span class="ex responsive">❌</span>
+            </a>
+          </li>
+        </ul>
+        <nav>
+          <ul class="navigation">
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="current-date">
+          <p id="date"></p>
+          <p id="last-active"></p>
+        </div>
+      </header>
+
+      <main id="join">
+        <form method="get" action="thankyou.html" class="application-form">
+
+          <fieldset class="name">
+            <legend>Contact Information</legend>
+            <label>First Name* <input type="text" name="fname" required></label>
+            <label>Last Name* <input type="text" name="lname" required></label>
+            <label>Email* <input type="email" name="email" placeholder="me@email.com" required></label>
+            <label>Phone Number* <input type="tel" name="phone" required></label>
+          </fieldset>
+
+          <fieldset class="business">
+            <legend>Business Information</legend>
+            <label>Business Position <input type="text" name="business-position" pattern="[A-Z\-\ ]{7,}"></label>
+            <label>Business Name* <input type="text" name="business-name" required></label>
+            <label>Business Description <textarea></textarea></label>
+          </fieldset>
+
+          <fieldset class="membership">
+
+            <input type="radio" id="np-member" class="radio-btn" name="membership" value="np-member" required>
+            <input type="radio" id="bronze-member" class="radio-btn" name="membership" value="bronze-member">
+            <input type="radio" id="silver-member" class="radio-btn" name="membership" value="silver-member">
+            <input type="radio" id="gold-member" class="radio-btn" name="membership" value="gold-member">
+
+            <legend>Membership</legend>
+            <p class="required">Required</p>
+            <label for="np-member" class="card-label">
+              <div id="np-card">
+                <h3>NP Membership: Free</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea magni repudiandae obcaecati! At molestias totam sit voluptatum illo, nihil eius fugit veritatis excepturi consequuntur commodi magnam quam iure neque beatae.</p>
+              </div>
+            </label>
+
+            <label for="bronze-member" class="card-label">
+              <div id="bronze-card">
+                <h3>Bronze Membership: $8.00</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea magni repudiandae obcaecati! At molestias totam sit voluptatum illo, nihil eius fugit veritatis excepturi consequuntur commodi magnam quam iure neque beatae.</p>
+              </div>
+            </label>
+
+            <label for="silver-member" class="card-label">
+              <div id="silver-card">
+                <h3>Silver Membership: $15.00</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea magni repudiandae obcaecati! At molestias totam sit voluptatum illo, nihil eius fugit veritatis excepturi consequuntur commodi magnam quam iure neque beatae.</p>
+              </div>
+            </label>
+
+            <label for="gold-member" class="card-label">
+              <div id="gold-card">
+                <h3>Gold Membership: $30.00</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea magni repudiandae obcaecati! At molestias totam sit voluptatum illo, nihil eius fugit veritatis excepturi consequuntur commodi magnam quam iure neque beatae.</p>
+              </div>
+            </label>
+
+          </fieldset>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </main>
+
+      <footer>
+        <img class="footer-logo" src="images/ranchocommerce.webp" />
+        <div class="address-info">
+          <h2>Rancho Chamber of Commerce</h2>
+          <p>Rancho Summit Park</p>
+          <p>5982 Kittyhawk Way</p>
+          <p>Rancho Cucamonga, CA 91739</p>
+        </div>
+        <div class="contact-info">
+          <p>info@ranbcho.org</p>
+          <p>+(554) 2254 413</p>
+          <p>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Rancho+Summit+Park/@34.145993,-117.5050595,17z/data=!3m1!4b1!4m5!3m4!1s0x80c3499fe0abe9f3:0x927ed662ef6d8ba6!8m2!3d34.1459886!4d-117.5028708"
+              >🌍Location</a
+            >
+          </p>
+        </div>
+        <div class="site-info">
+          <hr />
+          <p>
+            &copy; <span id="copyright"></span> | Eric Woll | WDD 230 Project |
+            <span class="datemod"></span>
+          </p>
+        </div>
+      </footer>
+    
+</body>
+</html>

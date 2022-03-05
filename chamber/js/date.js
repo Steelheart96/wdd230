@@ -9,7 +9,7 @@ const date = new Date()
 const latestDate = Intl.DateTimeFormat('en-Us', { dateStyle: 'full'}).format(date)
 displayDate.textContent = latestDate;
 
-let myStorage = window.sessionStorage;
+let myStorage = window.localStorage;
 
 const lastActive = myStorage.getItem('last-active');
 let activeP = document.querySelector('#last-active')

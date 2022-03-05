@@ -10,7 +10,7 @@ main {
     margin: 1rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Merriweather';
     color: midnightblue;
 }
@@ -317,7 +317,7 @@ footer {
     filter: brightness(1) grayscale(0) opacity(1) blur(0px);
 }
 
-main#discover {
+main#discover, main#thanks {
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
@@ -326,7 +326,7 @@ main#discover {
     justify-content: center;
 }
 
-main#discover picture {
+main#discover picture, main#thanks picture {
     position: relative;
     overflow: hidden;
     display: flex;
@@ -373,4 +373,122 @@ main#discover picture {
     border-color: rgb(151, 255, 215);
     border-radius: 1em;
     pointer-events: auto;
+}
+
+/* Join Content */
+
+main#join {
+    display: flex;
+}
+.application-form {
+    margin: auto;
+    max-width: 800px;
+}
+.application-form > fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    border-radius: 1em;
+    border-color: rgb(204, 174, 135);
+}
+.application-form > fieldset > legend {
+    font-size: 3em;
+    font-weight: 500;
+}
+.application-form > fieldset > label {
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+}
+.card-label > div {
+    background-color: rgba(204, 174, 135, 0.479);
+    border-radius: .5em;
+    padding: .5em;
+}
+.card-label p{
+    padding-top: .5em;
+}
+.card-label h3{
+    font-size: 1.5em;
+}
+.card-label:hover > div{
+    box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0.11);
+    outline-style: solid;
+    outline-color: midnightblue;
+    outline-width: thin;
+}
+.application-form > fieldset > label > input {
+    border-radius: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+.application-form > fieldset > label > textarea {
+    resize: none;
+    min-height: 6em;
+    border-radius: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    border-width: .12em;
+}
+.radio-btn {
+    display: none;
+}
+#np-member:checked~.card-label #np-card,
+#bronze-member:checked~.card-label #bronze-card,
+#silver-member:checked~.card-label #silver-card,
+#gold-member:checked~.card-label #gold-card {
+    box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0.438);
+    outline-style: solid;
+    outline-color: midnightblue;
+}
+.card > p {
+    font-size: .8em;
+}
+.required {
+    color: red;
+}
+.submit-btn {
+    margin-left: 5%;
+    border-radius: .5em;
+    padding: .4em;
+    font-size: 2em;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.submit-btn:active {
+    box-shadow: rgba(50, 50, 93, 0.11) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.164) 0px 18px 36px -18px inset;
+}
+
+/* Thankyou content */
+
+main#thanks {
+    display: grid;
+    justify-content: center;
+}
+
+.card-thanks {
+    max-width: 800px;
+    box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0.24);
+    outline-style: solid;
+    outline-color: midnightblue;
+    padding: 1em;
+    border-radius: .5em;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-thanks h2 {
+    text-align: center;
+    margin: .5em;
+    flex-basis: 100%;
+}
+.card-thanks ul {
+    list-style: '> ';
+    padding: 1em;
 }
