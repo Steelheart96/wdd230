@@ -1,0 +1,33 @@
+h1, h2, h3 {
+    font-family: 'Merriweather';
+    color: midnightblue;
+}
+p{
+    font-family: 'Nunito';
+    color: rgb(0, 126, 78);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+main{
+    margin: 1em;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em;
+}
+.card {
+    outline-style: solid;
+    outline-color: black;
+    padding: 1em;
+    text-align: center;
+    background-color: rgba(201, 149, 80, 0.479);
+    border-radius: 1em;
+    margin: 1em;
+}
+.card img {
+    max-width: 15em;
+    border-radius: 1em;
+}
