@@ -23,9 +23,21 @@ function MakeCards(prophetsList){
 
         imgEl = document.createElement('img');
         imgEl.src = `${prophet['imageurl']}`;
-        imgEl.alt = `Picture of ${prophet['name']} ${prophet['lastname']}`;
+        imgEl.alt = `Picture of ${prophet['name']} ${prophet['lastname']} - ${Suffix(prophet['order'])}`;
 
         divEl.append(h2El, pBirthDate, pBirthPlace, imgEl);
         cards.append(divEl);
     });
 }  
+
+function Suffix(order) {
+    let suffix = 'th'
+    if (order === 1){
+        suffix = 'st'
+    } else if (order === 2){
+        suffix = 'nd'
+    } else if (order === 3){
+        suffix = 'rd'
+    }
+    return `${order}${suffix} Latter Day President`
+}
