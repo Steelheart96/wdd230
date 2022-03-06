@@ -18,11 +18,13 @@ window.onresize = () => {
         pagenav.classList.add('responsive');
         ham.classList.remove('responsive');
         menuex.classList.add('responsive');
+        ListView()
     };
     if (window.innerWidth > buttonMaxWidth){
         pagenav.classList.remove('responsive');
         ham.classList.remove('responsive');
         menuex.classList.add('responsive');
+        GridView()
     };
 };
 

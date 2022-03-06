@@ -129,4 +129,10 @@
         box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.74);
         background-color: rgba(0, 0, 0, 0.418);
     }
+
+    .card-link {
+        text-decoration: none;
+        outline-style: solid;
+        outline-color: rgb(0, 126, 78);
+    }
 }

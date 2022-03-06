@@ -497,11 +497,77 @@ main#thanks {
 
 main#directory {
     margin: 2em;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
-.card-dir {
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.buttons button {
+    margin: .2em;
+    font-size: 2em;
+    padding: .1em;
+}
+#list-btn {
+    font-weight: 1000;
+}
+#grid-btn {
+    display: flex;
+    align-items: center;
+}
+#grid-btn img {
+    width: 1em;
+    pointer-events: none;
+}
+.card-link {
+    display: inline-block;
+    font-family: 'Nunito';
+    color: rgb(0, 126, 78);
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: .2em;
+    margin: .3em;
+    border-radius: 1em;
+    box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0);
+    transition: box-shadow 500ms;
+}
+.card-link:hover {
+    box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0.555);
+}
+
+/* Card list format */
+.cards-list {
+    display: flex;
+    flex-direction: column;
+}
+.card-list {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    font-size: .7em;
+    padding: 1em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: box-shadow 300ms ease-in-out;
+}
+.card-list:hover {
+    box-shadow: rgba(0, 0, 0, 0.623) 0px 5px 15px;
+}
+.card-list:nth-child(even) {
+    background-color: rgba(204, 174, 135, 0.479);
+}
+.card-list img{
+    display: none;
+}
+
+/* Card grid format */
+.cards-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.button-grid {
+    grid-column: 1/4;
+}
+.card-grid {
     text-align: center;
     outline-style: solid;
     outline-color: midnightblue;
@@ -512,28 +578,10 @@ main#directory {
     transition: box-shadow 300ms ease-in-out;
     background-color: rgb(204, 174, 135);
 }
-.card-dir:hover {
+.card-grid:hover {
     box-shadow: rgba(0, 0, 0, 0.623) 0px 5px 15px;
 }
-.card-dir img {
+.card-grid img {
     max-width: 10em;
     padding: .3em;
-}
-.card-dir a {
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Nunito';
-    color: rgb(0, 126, 78);
-    font-size: 1.2em;
-    font-weight: 700;
-    outline-style: solid;
-    outline-color: rgb(0, 126, 78);
-    padding: .2em;
-    margin: .3em;
-    border-radius: 1em;
-    box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0);
-    transition: box-shadow 500ms;
-}
-.card-dir a:hover {
-    box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0.555);
 }

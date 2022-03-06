@@ -69,4 +69,16 @@
     .join, .spotlight3 {
         display: block;
     }
+
+    .buttons button {
+        margin: .5em;
+        font-size: 3em;
+        padding: .25em;
+    }
+    #list-btn {
+        font-weight: 1000;
+    }
+    .card-list{
+        font-size: 2em;
+    }
 }
