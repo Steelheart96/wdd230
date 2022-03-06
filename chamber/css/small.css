@@ -561,8 +561,9 @@ main#directory {
 
 /* Card grid format */
 .cards-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .button-grid {
     grid-column: 1/4;

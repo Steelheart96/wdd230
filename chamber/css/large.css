@@ -81,4 +81,9 @@
     .card-list{
         font-size: 2em;
     }
+    .card-link {
+        text-decoration: none;
+        outline-style: solid;
+        outline-color: rgb(0, 126, 78);
+    }
 }
