@@ -14,7 +14,7 @@ h1, h2, h3 {
     font-family: 'Merriweather';
     color: midnightblue;
 }
-p{
+p {
     font-family: 'Nunito';
     color: rgb(0, 126, 78);
     font-size: 1.2em;
@@ -491,4 +491,46 @@ main#thanks {
 .card-thanks ul {
     list-style: '> ';
     padding: 1em;
+}
+
+/* Directory Content */
+
+main#directory {
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+}
+.card-dir {
+    text-align: center;
+    outline-style: solid;
+    outline-color: midnightblue;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0) 0px 18px 36px -18px inset;
+    transition: box-shadow 300ms ease-in-out;
+}
+.card-dir:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.card-dir img {
+    max-width: 30em;
+    padding: .3em;
+}
+.card-dir a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Nunito';
+    color: rgb(0, 126, 78);
+    font-size: 1.2em;
+    font-weight: 700;
+    outline-style: solid;
+    outline-color: rgb(0, 126, 78);
+    padding: .2em;
+    margin: .3em;
+    border-radius: 1em;
+    box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0);
+    transition: box-shadow 500ms;
+}
+.card-dir a:hover {
+    box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0.555);
 }
