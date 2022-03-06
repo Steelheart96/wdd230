@@ -19,7 +19,7 @@
         {
             "name": "Mars Bars",
             "link": "https://www.marsbar.co.uk/",
-            "address": "2115 S Vista Avenue Boise ID 83705",
+            "address": "2215 S Vista Avenue Boise ID 83705",
             "phone": "+543-344-1234",
             "membership": "np",
             "image": "images/marslogo.webp"
@@ -27,10 +27,26 @@
         {
             "name": "Lenity Technology",
             "link": "https://www.lenitytech.com/rancho-cucamonga-ca/",
-            "address": "2115 S Vista Avenue Boise ID 83705",
+            "address": "2117 S Vista Avenue Boise ID 83705",
             "phone": "+543-347-1234",
             "membership": "gold",
             "image": "images/lenitytech.webp"
+        },
+        {
+            "name": "iRobot",
+            "link": "https://www.irobot.com/roomba",
+            "address": "2190 S Vista Avenue Boise ID 83705",
+            "phone": "+543-347-1884",
+            "membership": "silver",
+            "image": "images/irobotlogo.webp"
+        },
+        {
+            "name": "Bowlero",
+            "link": "https://www.bowlero.com/location/bowlero-rancho-cucamonga",
+            "address": "2506 S Vista Avenue Boise ID 83705",
+            "phone": "+543-347-1984",
+            "membership": "Gold",
+            "image": "images/bowlerologo.webp"
         }
     ]
 }

@@ -498,6 +498,7 @@ main#thanks {
 main#directory {
     margin: 2em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .card-dir {
@@ -505,15 +506,17 @@ main#directory {
     outline-style: solid;
     outline-color: midnightblue;
     padding: 1em;
+    margin: .5em;
     border-radius: 1em;
-    box-shadow: rgba(50, 50, 93, 0) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0) 0px 18px 36px -18px inset;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition: box-shadow 300ms ease-in-out;
+    background-color: rgb(204, 174, 135);
 }
 .card-dir:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.623) 0px 5px 15px;
 }
 .card-dir img {
-    max-width: 30em;
+    max-width: 10em;
     padding: .3em;
 }
 .card-dir a {

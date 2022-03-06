@@ -1,19 +1,20 @@
-const cards = document.querySelector('.directory')
+const cards = document.querySelector('#directory')
 const dataUrl = 'https://steelheart96.github.io/wdd230/chamber/json/data.json'
 
 fetch(dataUrl)
-    .then( response => response.json() )
-    .then(companyies => {
-        CompanyCards(companyies);
-    });
+  .then( response => response.json() )
+  .then(companyies => {
+    console.table(companyies)
+    CompanyCards(companyies);
+});
 
-function CompanyCards(companyies){
-    companyies['companyies'].forEach(company => {
-        divEl = document.createElement('div');
-        divEl.classList.add('card-dir');
+function CompanyCards(companies){
+    companies['companies'].forEach(company => {
+        divEl = document.createElement('div')
+        divEl.classList.add('card-dir')
 
         imgEl = document.createElement('img');
-        imgEl.src = `${company[image]}`
+        imgEl.src = `${company['image']}`
         imgEl.alt = `Image of ${company['name']}'s Logo`
 
         pAddress = document.createElement('p');
@@ -29,6 +30,6 @@ function CompanyCards(companyies){
 
         divEl.append(imgEl, pAddress, pPhone, aLink);
 
-        cards.append(divEl)
+        cards.appendChild(divEl);
     });
 }
