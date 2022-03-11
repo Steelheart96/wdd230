@@ -287,7 +287,7 @@ footer {
     text-decoration: none;
     color: rgb(60, 255, 180);
 }
-.contact-info a::after{
+.contact-info a::after, .credits a::after{
     content: "";
     display: block;
     width: 100%;
@@ -296,8 +296,13 @@ footer {
     transform: scaleX(0);
     transition: 0.3s ease;
 }
-.contact-info a:hover::after {
+.contact-info a:hover::after, .credits a:hover::after {
     transform: scaleX(1);
+}
+.credits a {
+    color: rgb(60, 255, 180);
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* hidden content */
