@@ -16,23 +16,22 @@
 }
 
 h1, h2, h3 {
+    font-size: 3em;
     font-family: 'Merriweather';
     color: midnightblue;
 }
 p{
     font-family: 'Nunito';
     color: rgb(0, 126, 78);
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
-main{
-    margin: 1em;
-}
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
     margin: 2em;
 }
 .card {
@@ -45,6 +44,6 @@ main{
     margin: 1em;
 }
 .card img {
-    max-width: 15em;
+    max-width: 20em;
     border-radius: 1em;
 }
