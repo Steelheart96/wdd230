@@ -15,22 +15,19 @@
     color: blue;
 }
 
-.content {
-    margin: 0 auto;
-    padding: 1%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
+
+main {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+.api-info {
+    background-color: rgba(201, 149, 80, 0.479);
+    border-radius: 2em;
     text-align: center;
-}
-
-img {
-    max-width: 100%;
-    padding: .5em;
-    filter: grayscale(1) brightness(0.5) opacity(0.2);
-    transition: filter 2s ease;
-}
-
-img.loaded {
-    filter: grayscale(0) brightness(1) opacity(1);
+    padding: 1em;
+    outline-style: solid;
+    outline-color: black;
+    box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0.555);
 }

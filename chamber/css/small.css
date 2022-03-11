@@ -191,18 +191,14 @@ main#portal div {
 }
 
 .name-and-call{
-    /* background-image: url("../images/ranchohero.webp"); */
-    /* Instead of creating 3 images, I used the line below and position in medium and large css.*/
-    /* background-size:cover; */
-    /* background-position-y: 30%; */
-    /* background-color: rgba(0, 0, 0, 0.438); Tint color */
-    /* background-blend-mode: multiply; */
-    box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.281);
+    background-image: url("../images/ranchohero.webp");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.438); /*Tint color */
+    background-blend-mode: multiply;
+    min-height: 10em;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    overflow: hidden;
 }
 .name-and-call:hover {
     box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.603);
@@ -210,14 +206,6 @@ main#portal div {
 .name-and-call h2 {
     color: white;
     font-size: 1em;
-    position: absolute;
-}
-.name-and-call picture img {
-    object-fit: cover;
-    filter: brightness(70%);
-    width: 700px;
-    height: 600px;
-    transform: translateY(.5%);
 }
 
 .event {
@@ -240,6 +228,12 @@ main#portal div {
 }
 .weather > p {
     padding: .1em;
+}
+.icon-and-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .icon-deg {
     display: flex;

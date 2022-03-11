@@ -17,7 +17,7 @@
     <script defer src="js/date.js"></script>
     <script defer src="js/responsive.js"></script>
     <script defer src="js/banner.js"></script>
-    <script defer src="js/windchill.js"></script>
+    <script defer src="js/weather.js"></script>
   </head>
   <body>
     <div class="banner">
@@ -82,27 +82,20 @@
       </div>
       <div class="weather">
         <h2>Weather</h2>
-        <div class="icon-deg">
-          <img src="images/weathericon.webp">
-          <p id="weather-degrees"><span>30</span>&deg;</p>
-        </div>
-        <p>Cloudy</p>
-        <hr>
-        <p id="wind-speed">Wind Speed: <span>4</span> mph</p>
-        <p id="wind-chill">Wind Chill: <span></span></p>
+          <p><span id="weather-degrees"></span>&deg;F</p>
+          <div class="icon-and-description">
+            <img id="weather-image" src="" alt ="">
+            <p id="weather-description"></p>
+          </div>
+          <hr>
+          <p id="wind-speed">Wind Speed: <span>4</span> mph</p>
+          <p id="wind-chill">Wind Chill: <span></span></p>
       </div>
       <div class="join">
         <h2>Come Join our Chamber community!</h2>
         <a href="#">Join!</a>
       </div>
       <div class="name-and-call">
-        <picture>
-          <img src="images/ranchohero-500.webp"
-              srcset="images/ranchohero-500.webp 500w,
-                      images/ranchohero-800.webp 800w,
-                      images/ranchohero-1000.webp 1000w"
-              alt="Hero Image" >
-        </picture>
         <h2>The Rancho Chamber of Commerce</h2>
       </div>
 

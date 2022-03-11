@@ -11,20 +11,24 @@ menubutton.onclick = () => {
     menuex.classList.toggle('responsive')
 };
 
-let buttonMaxWidth = 1199;
+let directoryScreenWidth = 1199;
 
 window.onresize = () => {
-    if (window.innerWidth < buttonMaxWidth){
+    if (window.innerWidth < directoryScreenWidth){
         pagenav.classList.add('responsive');
         ham.classList.remove('responsive');
         menuex.classList.add('responsive');
-        ListView()
+        if (document.URL.includes('directory')){
+            ListView()
+        }
     };
-    if (window.innerWidth > buttonMaxWidth){
+    if (window.innerWidth > directoryScreenWidth){
         pagenav.classList.remove('responsive');
         ham.classList.remove('responsive');
         menuex.classList.add('responsive');
-        GridView()
+        if (document.URL.includes('directory')){
+            GridView()
+        }
     };
 };
 
