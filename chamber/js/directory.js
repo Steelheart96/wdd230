@@ -6,9 +6,7 @@ const gridBtn = document.getElementById('grid-btn')
 
 fetch(dataUrl)
   .then( response => response.json() )
-  .then(companyies => {
-    CompanyCards(companyies);
-});
+  .then(companies => { CompanyCards(companies) });
 
 listBtn.addEventListener('click', ListView)
 gridBtn.addEventListener('click', GridView)
