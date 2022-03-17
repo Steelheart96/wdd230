@@ -7,7 +7,8 @@
             "phone": "+543-567-1234",
             "email": "contact@barktrainers.com",
             "membership": "silver",
-            "image": "images/barklogo.webp"
+            "image": "images/barklogo.webp",
+            "description": "Your one stop shop for teaching your dog(s) all the tricks!"
         },
         {
             "name": "Insta-Cart",
@@ -16,7 +17,8 @@
             "phone": "+543-342-1234",
             "email": "contact@instacart.com",
             "membership": "gold",
-            "image": "images/instalogo.svg"
+            "image": "images/instalogo.svg",
+            "description": "Tired of waiting in lines? Insta-Cart will deliver your groceries to your door!"
         },
         {
             "name": "Mars Bars",
@@ -25,7 +27,8 @@
             "phone": "+543-344-1234",
             "email": "contact@marsbars.com",
             "membership": "np",
-            "image": "images/marslogo.webp"
+            "image": "images/marslogo.webp",
+            "description": "Do you need a delicious candy to go with that card you got for somone? Mars Bars has got you covered!"
         },
         {
             "name": "Lenity Technology",
@@ -34,7 +37,8 @@
             "phone": "+543-347-1234",
             "email": "contact@lenitytech.com",
             "membership": "gold",
-            "image": "images/lenitytech.webp"
+            "image": "images/lenitytech.webp",
+            "description": "We are the one stop shop for all of your IT consulting needs."
         },
         {
             "name": "iRobot",
@@ -43,7 +47,8 @@
             "phone": "+543-347-1884",
             "email": "contact@irobot.com",
             "membership": "silver",
-            "image": "images/irobotlogo.webp"
+            "image": "images/irobotlogo.webp",
+            "description": "Don't have the time to clean your floors? iRobot has you covered with our cleaning robots!"
         },
         {
             "name": "Bowlero",
@@ -52,7 +57,8 @@
             "phone": "+543-347-1984",
             "email": "contact@bowlero.com",
             "membership": "Gold",
-            "image": "images/bowlerologo.webp"
+            "image": "images/bowlerologo.webp",
+            "description": "Come and enjoy some family time at Bowlero!"
         }
     ]
 }
