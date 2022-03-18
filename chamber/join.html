@@ -18,6 +18,7 @@
     <script defer src="js/responsive.js"></script>
     <script defer src="js/banner.js"></script>
     <script defer src="js/imageloader.js"></script>
+    <script defer src="js/formonload.js"></script>
 </head>
 <body>
     <div class="banner">
@@ -59,10 +60,11 @@
         </ul>
         <nav>
           <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="current-date">
@@ -84,7 +86,7 @@
 
           <fieldset class="business">
             <legend>Business Information</legend>
-            <label>Business Position <input type="text" name="business-position" pattern="[A-Z\-\ ]{7,}"></label>
+            <label>Business Position <input type="text" name="business-position" pattern="[A-Za-z -]{7,}"></label>
             <label>Business Name* <input type="text" name="business-name" required></label>
             <label>Business Description <textarea></textarea></label>
           </fieldset>
@@ -125,8 +127,12 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea magni repudiandae obcaecati! At molestias totam sit voluptatum illo, nihil eius fugit veritatis excepturi consequuntur commodi magnam quam iure neque beatae.</p>
               </div>
             </label>
-
           </fieldset>
+
+          <fieldset id="hidden-field">
+            <input type="text" id="date-and-time" required>
+          </fieldset>
+
           <button type="submit" class="submit-btn">Submit</button>
         </form>
       </main>

@@ -11,10 +11,10 @@ menubutton.onclick = () => {
     menuex.classList.toggle('responsive')
 };
 
-let directoryScreenWidth = 1199;
+let ScreenWidth = 1199;
 
 window.onresize = () => {
-    if (window.innerWidth < directoryScreenWidth){
+    if (window.innerWidth < ScreenWidth){
         pagenav.classList.add('responsive');
         ham.classList.remove('responsive');
         menuex.classList.add('responsive');
@@ -22,7 +22,7 @@ window.onresize = () => {
             ListView()
         }
     };
-    if (window.innerWidth > directoryScreenWidth){
+    if (window.innerWidth > ScreenWidth){
         pagenav.classList.remove('responsive');
         ham.classList.remove('responsive');
         menuex.classList.add('responsive');

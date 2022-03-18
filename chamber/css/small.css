@@ -89,20 +89,18 @@ nav {
 }
 
 /* Responsive Nav*/
-.navigation {
-    display: flex;
+nav ul {
+    display: block;
 	list-style: none;
-    align-content: center;
 }
 .navigation li {
 	display: block;
-    padding: 5%;
 }
 .navigation a {
 	display: block;
 	text-decoration: none;
     color: rgb(60, 255, 180);
-    font-size: 1em;
+    font-size: 1.7em;
 }
 
 /* Responsive actions */
@@ -208,6 +206,7 @@ main#portal div {
     font-size: 1em;
 }
 
+/* Home Event */
 .event {
     grid-row: 2/3;
     text-align: center;
@@ -215,7 +214,25 @@ main#portal div {
     box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.281);
     padding: 1em;
 }
+.event p {
+    padding: .5em;
+}
+.event a {
+    display: inline-block;
+    text-decoration: none;
+    outline-style: solid;
+    outline-color: rgb(0, 126, 78);
+    padding: .2em;
+    border-radius: 1em;
+    color: rgb(0, 126, 78);
+    font-size: 1.5em;
+    transition: outline 1s ease, color .4s ease;
+}
+.event h2 {
+    padding: .5em;
+}
 
+/* Home Weather*/
 .weather {
     grid-row: 3/4;
     text-align: center;
@@ -250,12 +267,13 @@ main#portal div {
     box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.281);
     padding: 1em;
 }
-
 .news:hover {
     box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0.603);
 }
 .spotlights {
     grid-row: 5/6;
+    display: grid;
+    align-items: center;
 }
 .join, .responsive-spotlight {
     display: none;
@@ -385,24 +403,24 @@ main#discover picture, main#thanks picture {
 main#join {
     display: flex;
 }
-.application-form {
-    margin: auto;
+.application-form, #contact-form {
     max-width: 800px;
+    margin: auto;
 }
-.application-form > fieldset {
+.application-form > fieldset, #contact-form > fieldset {
     display: flex;
     flex-direction: column;
-    margin: 2em;
+    margin: .5em;
     border-radius: 1em;
     border-color: rgb(204, 174, 135);
 }
-.application-form > fieldset > legend {
+.application-form > fieldset > legend, #contact-form > fieldset > legend {
     font-size: 3em;
     font-weight: 500;
 }
-.application-form > fieldset > label {
+.application-form > fieldset > label, #contact-form > fieldset > label {
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: .5em;
     display: flex;
     flex-direction: column;
@@ -424,14 +442,14 @@ main#join {
     outline-color: midnightblue;
     outline-width: thin;
 }
-.application-form > fieldset > label > input {
+.application-form > fieldset > label > input, #contact-form > fieldset > label > input {
     border-radius: 1em;
     padding-left: .5em;
     padding-right: .5em;
     padding-top: .2em;
     padding-bottom: .2em;
 }
-.application-form > fieldset > label > textarea {
+.application-form > fieldset > label > textarea, #contact-form > fieldset > label > textarea {
     resize: none;
     min-height: 6em;
     border-radius: .5em;
@@ -455,14 +473,18 @@ main#join {
 .card > p {
     font-size: .8em;
 }
+#hidden-field{
+    display: none;
+}
+
 .required {
     color: red;
 }
 .submit-btn {
     margin-left: 5%;
     border-radius: .5em;
-    padding: .4em;
-    font-size: 2em;
+    padding: .3em;
+    font-size: 1em;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 .submit-btn:active {
@@ -590,4 +612,43 @@ main#directory {
 .card-grid img {
     max-width: 10em;
     padding: .3em;
+}
+
+/* Contact Thank You Content */
+
+main#contact-thanks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-image: url("../images/ranchohero.webp");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.438); /*Tint color */
+    background-blend-mode: multiply;
+    background-position-x: -10em;
+}
+
+.card-contact-sent {
+    text-align: center;
+    background-color: white;
+    max-width: 800px;
+    box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0.24);
+    outline-style: solid;
+    outline-color: midnightblue;
+    outline-width: .4em;
+    padding: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    border-radius: .5em;
+    margin: 1em;
+    box-shadow: -1px 1px 33px 1px rgba(0, 0, 0, 0);
+    transition: box-shadow .3s ease;
+}
+.card-contact-sent h2 {
+    text-align: center;
+    margin: .5em;
+    flex-basis: 100%;
+}
+.card-contact-sent:hover {
+    box-shadow: -1px 1px 50px 1px rgba(0, 0, 0, 0.87);
 }

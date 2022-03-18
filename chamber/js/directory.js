@@ -1,6 +1,8 @@
 const cards = document.querySelector('.cards')
 const dataUrl = 'https://steelheart96.github.io/wdd230/chamber/json/data.json'
 
+const directoryScreenWidth = 1199;
+
 const listBtn = document.getElementById('list-btn')
 const gridBtn = document.getElementById('grid-btn')
 
@@ -11,11 +13,25 @@ fetch(dataUrl)
 listBtn.addEventListener('click', ListView)
 gridBtn.addEventListener('click', GridView)
 
+if (window.innerWidth < directoryScreenWidth){
+    cards.classList.add('cards-list')
+}
+else if (window.innerWidth > directoryScreenWidth){
+    cards.classList.add('cards-grid')
+};
+
 function CompanyCards(companies){
     companies['companies'].forEach(company => {
         divEl = document.createElement('div')
         divEl.classList.add('card-company')
-        divEl.classList.add('card-grid')
+        
+        
+        if (window.innerWidth < directoryScreenWidth){
+            divEl.classList.add('card-list')
+        }
+        else if (window.innerWidth > directoryScreenWidth){
+            divEl.classList.add('card-grid')
+        };
 
         imgEl = document.createElement('img');
         imgEl.src = `${company['image']}`
@@ -43,7 +59,7 @@ function GridView() {
     cards.classList.remove('cards-list')
     cards.classList.add('cards-grid')
 
-    let cardsArray = document.querySelectorAll('.card-company')
+    let cardsArray = document.querySelectorAll('.cards div')
     cardsArray.forEach( card => {
         card.classList.remove('card-list')
         card.classList.add('card-grid')
@@ -54,7 +70,7 @@ function ListView() {
     cards.classList.remove('cards-grid')
     cards.classList.add('cards-list')
 
-    let cardsArray = cards.querySelectorAll('.card-company')
+    let cardsArray = cards.querySelectorAll('.cards div')
     cardsArray.forEach( card => {
         card.classList.remove('card-grid')
         card.classList.add('card-list')

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="Assignment 08, Chamber of Commerce—Directory, for Eric Woll in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+      content="Assignment 08, Chamber of Commerce—Contact Us, for Eric Woll in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
     />
-    <title>Directory - Rancho Chamber of Commerce</title>
+    <title>Contact Us - Rancho Chamber of Commerce</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
@@ -17,8 +17,6 @@
     <script defer src="js/date.js"></script>
     <script defer src="js/responsive.js"></script>
     <script defer src="js/banner.js"></script>
-    <script defer src="js/imageloader.js"></script>
-    <script defer src="js/directory.js"></script>
 </head>
 <body>
     
@@ -75,12 +73,15 @@
       </header>
 
       <main id="directory">
-        <div class="buttons">
-          <button id="list-btn">☰</button>
-          <button id="grid-btn"><img src="images/grid.webp" aria-disabled="true"></button>
-        </div>
-        <div class="cards">
-
+        <div class="contact">
+            <form id="contact-form" method="get" action="contactsent.html">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label>Email* <input type="email" name="email" placeholder="me@email.com" required></label>
+                    <label>Message <textarea></textarea></label>
+                </fieldset>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
         </div>
       </main>
 
