@@ -156,7 +156,7 @@
     }
     .text-t-load {
         bottom: auto;
-        top: -10em;
+        top: -20em;
         transition: top .5s ease;
         background-color: rgba(0, 0, 0, 0);
         border-bottom-right-radius: 0;
