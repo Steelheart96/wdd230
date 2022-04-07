@@ -111,11 +111,18 @@ header {
 .information h3 {
     text-align: center;
 }
+.information > div > a {
+    border-style: solid;
+    border-color: var(--Grey);
+    padding: .3em;
+    border-radius: 1em;
+}
 
 /* Information info */
 .info {
     padding: 1em;
     display: none;
+    flex-direction: column;
 }
 .info img {
     width: 100%;
@@ -125,6 +132,7 @@ header {
 }
 .info a {
     display: inline-block;
+    width: 3em;
     text-decoration: none;
 }
 
@@ -159,15 +167,27 @@ header {
 #daily-weather {
     justify-content: center;
 }
-#daily-weather img {
-    width: 15em;
+.weather-img-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
-#daily-weather h3 {
-    text-align: center;
+.weather-img-title img {
+    width: 3em;
 }
 
 /* Weekly Weather */
-
+#weekly-weather {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.weekly-weather {
+    display: grid;
+    justify-content: center;
+}
+.weekly-weather img {
+    width: 3em;
+}
 
 /* --- Contact/Social Information --- */
 
@@ -276,26 +296,26 @@ main#reservations h1 {
 
 /* !!!--- Card Page Content ---!!! */
 
-main#temples, .mission-suites, .credits {
+main#temples, .mission-suites {
     display: flex;
     flex-direction: column;
 }
 
-.temple-card, .mission-suite, .image-credit {
+.temple-card, .mission-suite {
     border-style: solid;
     border-color: black;
     border-radius: 1em;
     margin: 2em;
     background-color: var(--Grey);
 }
-.temple-card h2, .mission-suite h2, .image-credit h2 {
+.temple-card h2, .mission-suite h2 {
     margin: 1em;
 }
-.temple-card img, .mission-suite img, .image-credit img {
+.temple-card img, .mission-suite img {
     width: 90%;
     margin: 1em;
 }
-.temple-sessions, .mission-suite-info, .credit-info {
+.temple-sessions, .mission-suite-info {
     margin: 1em;
 }
 .temple-info-dropdown, .mission-suite-dropdown {
@@ -348,6 +368,14 @@ main#temples, .mission-suites, .credits {
     padding: .2em;
     border-radius: .8em;
     text-decoration: none;
+}
+.reception-services, .reception-booking {
+    border-style: solid;
+    border-color: black;
+    border-radius: 1em;
+    margin: 2em;
+    background-color: var(--Grey);
+    padding: 1em;
 }
 
 /* !!!--- Reservation Thank You content ---!!! */

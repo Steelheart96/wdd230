@@ -11,29 +11,29 @@ const infoContent3 = document.getElementById("info-content-3");
 // Temple Info Event Listeners
 
 infoBtn1.addEventListener("click", () => {
-    if (!infoContent1.classList.contains("responsive-block")) {
-        infoContent1.classList.add("responsive-block");
+    if (!infoContent1.classList.contains("responsive-grid")) {
+        infoContent1.classList.add("responsive-grid");
 
-        infoContent2.classList.remove("responsive-block");
-        infoContent3.classList.remove("responsive-block");
+        infoContent2.classList.remove("responsive-grid");
+        infoContent3.classList.remove("responsive-grid");
     };
 });
 
 infoBtn2.addEventListener("click", () => {
-    if (!infoContent2.classList.contains("responsive-block")) {
-        infoContent2.classList.add("responsive-block");
+    if (!infoContent2.classList.contains("responsive-grid")) {
+        infoContent2.classList.add("responsive-grid");
         
-        infoContent1.classList.remove("responsive-block");
-        infoContent3.classList.remove("responsive-block");
+        infoContent1.classList.remove("responsive-grid");
+        infoContent3.classList.remove("responsive-grid");
     };
 });
 
 infoBtn3.addEventListener("click", () => {
-    if (!infoContent3.classList.contains("responsive-block")) {
-        infoContent3.classList.add("responsive-block");
+    if (!infoContent3.classList.contains("responsive-grid")) {
+        infoContent3.classList.add("responsive-grid");
         
-        infoContent2.classList.remove("responsive-block");
-        infoContent1.classList.remove("responsive-block");
+        infoContent2.classList.remove("responsive-grid");
+        infoContent1.classList.remove("responsive-grid");
     };
 });
 

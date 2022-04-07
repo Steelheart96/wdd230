@@ -58,16 +58,19 @@ function CreateTempleCard(temple) {
         let templeContact = document.createElement("div");
         templeContact.classList.add('temple-contact');
 
+        let templeContactTitle = document.createElement('h4');
+        templeContactTitle.textContent = "Contact";
+
         let templePhone = document.createElement('p');
         templePhone.innerHTML = `<strong>Phone Number:</strong> ${temple.phone}`;
 
         let templeEmail = document.createElement('p');
-        templeEmail.innerHTML = `<strong>Phone Number:</strong> ${temple.email}`;
+        templeEmail.innerHTML = `<strong>Email:</strong> ${temple.email}`;
 
         let templeAddress = document.createElement('p');
-        templeAddress.innerHTML = `<strong>Phone Number:</strong> ${temple.address}`;
+        templeAddress.innerHTML = `<strong>Address:</strong> ${temple.address}`;
 
-        templeContact.append(templePhone, templeEmail, templeAddress);
+        templeContact.append(templeContactTitle, templePhone, templeEmail, templeAddress);
 
         templeInfo.append(templeContact);
 
@@ -84,7 +87,6 @@ function CreateTempleCard(temple) {
             templeService.textContent = service;
             templeServices.append(templeService);
         });
-
         templeInfo.append(templeServices);
 
         // Temple Closure Info Div
@@ -93,7 +95,7 @@ function CreateTempleCard(temple) {
 
         let templeClosuresTitle = document.createElement('h4');
         templeClosuresTitle.textContent = `Closures`;
-        templeClosures.append(templeServicesTitle);
+        templeClosures.append(templeClosuresTitle);
 
         temple.temple_closures.map(closed => {
             let templeClosure = document.createElement('p');
@@ -113,7 +115,7 @@ function CreateTempleCard(temple) {
 
         temple.history.map(history => {
             let templeHistoryItem = document.createElement('p');
-            templeHistoryItem.textContent = closed;
+            templeHistoryItem.textContent = history;
             templeHistory.append(templeHistoryItem);
         });
 

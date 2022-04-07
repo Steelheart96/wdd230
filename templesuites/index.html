@@ -10,9 +10,11 @@
     <title>Home - Temple Inn & Suites</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
     <script defer src="js/responsivenav.js"></script>
     <script defer src="js/randomizeheroimage.js"></script>
     <script defer src="js/responsivehomebuttons.js"></script>
+    <script defer src="js/weather.js"></script>
 </head>
 
 <body>
@@ -45,29 +47,23 @@
                     <li><a id="info-btn-3">Arizona</a></li>
                 </ul>
             </nav>
-            <div class="info responsive-block" id="info-content-1">
+            <div class="info responsive-grid" id="info-content-1">
                 <h3>San Diego Temple</h3>
                 <img src="images/SanDiegoTemple.jpg" alt="Temple">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, exercitationem ullam facilis
-                    iste, inventore omnis sit natus totam quaerat libero sint odit quos error modi eos quo, quasi soluta
-                    consectetur!</p>
-                <a href="">Learn More</a>
+                <p>Want to enjoy the San Diego temple and all it has to offer it's patreons? Your in luck! Temple Inn & Suites has a location there allowing you to enjoy the temple for more than a Day!</p>
+                <a href="./reservations.html">Reserve Now!</a>
             </div>
             <div class="info" id="info-content-2">
                 <h3>Washington DC Temple</h3>
                 <img src="images/WashingtonTemple.jpg" alt="Temple">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, exercitationem ullam facilis
-                    iste, inventore omnis sit natus totam quaerat libero sint odit quos error modi eos quo, quasi soluta
-                    consectetur!</p>
-                <a href="">Learn More</a>
+                <p>The Washington DC temple is currently closed, however, there is an exciting event that will take place at this temple starting Arpil of this year! This temple will have an open house for everyone, not just those who have a temple recomend, to come and see inside the Washington DC temple from April 28, 2022 - June 11, 2022.</p>
+                <a target="_blank" href="https://www.churchofjesuschrist.org/temples/details/washington-d.c.-temple?lang=eng">Learn More</a>
             </div>
             <div class="info" id="info-content-3">
                 <h3>Gilbert Arizona Temple</h3>
                 <img src="images/GilbertAZTemple.jpg" alt="Temple">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, exercitationem ullam facilis
-                    iste, inventore omnis sit natus totam quaerat libero sint odit quos error modi eos quo, quasi soluta
-                    consectetur!</p>
-                <a href="">Learn More</a>
+                <p>Want to have a wedding reception after being married in the Gildert Arizona Temple? Temple Inn & Suites has Wedding Reception services and rooms that you can use!</p>
+                <a href="./reception.html">Learn More</a>
             </div>
         </div>
 
@@ -79,42 +75,42 @@
                 </ul>
             </nav>
             <div class="weather-info responsive-grid" id="daily-weather">
-                <img src="images/placeholder.png" alt="">
                 <div class="conditions">
-                    <h3 id="weather-condition">Condition</h3>
+                    <div class="weather-img-title">
+                        <img id="weather-image" src="./images/placeholder.png" id="weather-icon">
+                        <h3 id="weather-condition"></h3>
+                    </div>
                     <hr>
-                    <p id="weather-degrees">Degrees: </p>
-                    <p id="weather-wind-speed">Feels Like: </p>
-                    <p id="weather-feels-like">Humidity: </p>
+                    <p id="weather-degrees"></p>
+                    <p id="weather-feels-like"></p>
+                    <p id="weather-humidity"></p>
                 </div>
             </div>
             <div class="weather-info" id="weekly-weather">
-                <ul class="weekly-weather-list">
-                    
+
+            </div>
+        </div>
+
+        <div class="inn-info">
+            <nav class="inn-info-nav">
+                <ul>
+                    <li><a id="social-button">Our Socials</a></li>
+                    <li><a id="contact-button">Contact Us</a></li>
                 </ul>
+            </nav>
+            <div class="inn-info-content responsive-grid" id="social-info">
+                <div class="social-icons">
+                    <a href="" target="_blank"><img src="images/FacebookIcon.png" alt="Facebook Icon" aria-disabled="true"></a>
+                    <a href="" target="_blank"><img src="images/InstagramIcon.png" alt="Instagram Icon" aria-disabled="true"></a>
+                    <a href="" target="_blank"><img src="images/TwitterIcon.png" alt="Twitter Icon" aria-disabled="true"></a>
+                </div>
+                </div>
+            <div class="inn-info-content" id="contact-info">
+                <p><strong>Email:</strong> <a href="mailto: templeinnsuites@info.com">templeinnsuites@info.com</a></p>
+                <p><strong>Phone Number:</strong> 800-981-1932</p>
             </div>
         </div>
     </main>
-
-    <div class="inn-info">
-        <nav class="inn-info-nav">
-            <ul>
-                <li><a id="social-button">Our Socials</a></li>
-                <li><a id="contact-button">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="inn-info-content responsive-grid" id="social-info">
-            <div class="social-icons">
-                <a href="" target="_blank"><img src="images/FacebookIcon.png" alt="Facebook Icon" aria-disabled="true"></a>
-                <a href="" target="_blank"><img src="images/InstagramIcon.png" alt="Instagram Icon" aria-disabled="true"></a>
-                <a href="" target="_blank"><img src="images/TwitterIcon.png" alt="Twitter Icon" aria-disabled="true"></a>
-            </div>
-            </div>
-        <div class="inn-info-content" id="contact-info">
-            <p><strong>Email:</strong> <a href="mailto: templeinnsuites@info.com">templeinnsuites@info.com</a></p>
-            <p><strong>Phone Number:</strong> 800-981-1932</p>
-        </div>
-    </div>
 
     <footer>
         <div class="footer-icon-name">
@@ -123,7 +119,6 @@
             <p>Temple Inn & Suites</p>
         </div>
         <p id="location">4800 Montgomery Ln #300, Bethesda, MD 20814</p>
-        <a href="./imagecredits.html" id="image-credits">Image Credits</a>
         <div class="maps-location">
             <a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832559,-77.0977205,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318" target="_blank"><img src="images/MapIcon.png" alt="Google Maps Icon" aria-disabled="true"><p>Google Maps Location</p></a>
         </div>
