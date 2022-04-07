@@ -25,7 +25,7 @@
                 "Saturday, 24 December 2022",
                 "Saturday, 31 December 2022"
             ],
-            "image": "SanDiegoTemple.jpg"
+            "image": "../images/SanDiegoTemple.jpg"
         },
         {
             "name": "Washington D.C. Temple",
@@ -47,7 +47,7 @@
             "temple_closures": [
                 "Current - August 30, 2022"
             ],
-            "image": "WashingtonTemple.jpg"
+            "image": "../images/WashingtonTemple.jpg"
         },
         {
             "name": "Gilbert Arizona Temple",
@@ -76,7 +76,7 @@
                 "Saturday, 24 December 2022",
                 "Saturday, 31 December 2022"
             ],
-            "image": "GilbertAZTemple.jpg"
+            "image": "../images/GilbertAZTemple.jpg"
         },
         {
             "name": "Idaho Falls Idaho Temple",
@@ -106,7 +106,7 @@
                 "Saturday, 24 December 2022",
                 "Saturday, 31 December 2022"
             ],
-            "image": "SanDiegoTemple.jpg"
+            "image": "../images/SanDiegoTemple.jpg"
         },
         {
             "name": "Mount Timpanogos Utah Temple",
@@ -135,7 +135,7 @@
                 "Saturday, 24 December 2022",
                 "Saturday, 31 December 2022"
             ],
-            "image": "SanDiegoTemple.jpg"
+            "image": "../images/SanDiegoTemple.jpg"
         }
     ]
 }

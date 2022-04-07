@@ -9,6 +9,7 @@ fetch(requestURL)
 
 function MakeCards(prophetsList){
     prophetsList['prophets'].forEach(prophet => {
+        
         divEl = document.createElement('div');
         divEl.classList.add('card');
 

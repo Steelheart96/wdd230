@@ -1,13 +1,8 @@
-const jsonURL = 'https://steelheart96.github.io/wdd230/templesuites/json/temples.json'
-
+const jsonURL = 'https://steelheart96.github.io/wdd230/templesuites/json/temples.json';
 const templeCards = document.getElementById("temples");
 
-fetch(jsonURL)
-  .then( response => response.json())
-  .then(temples => CreateTempleCards(temples));
-
-function CreateTempleCards(temples) {
-    temples[temples].foreach(temple => {
+function CreateTempleCard(temple) {
+    console.log(temple)
 
         let card = document.createElement('div');
         card.classList.add("temple-card");
@@ -85,7 +80,7 @@ function CreateTempleCards(temples) {
         templeServicesTitle.textContent = `Services`;
         templeServices.append(templeServicesTitle);
 
-        temple.services.foreach(service => {
+        temple.services.map(service => {
             let templeService = document.createElement('p');
             templeService.textContent = service;
             templeServices.append(templeService);
@@ -101,7 +96,7 @@ function CreateTempleCards(temples) {
         templeClosuresTitle.textContent = `Closures`;
         templeClosures.append(templeServicesTitle);
 
-        temple.temple_closures.foreach(closed => {
+        temple.temple_closures.map(closed => {
             let templeClosure = document.createElement('p');
             templeClosure.textContent = closed;
             templeClosures.append(templeClosure);
@@ -117,7 +112,7 @@ function CreateTempleCards(temples) {
         templeHistoryTitle.textContent = `History`;
         templeHistory.append(templeHistoryTitle);
 
-        temple.temple_closures.foreach(closed => {
+        temple.temple_closures.map(closed => {
             let templeHistoryItem = document.createElement('p');
             templeHistoryItem.textContent = closed;
             templeHistory.append(templeHistoryItem);
@@ -126,5 +121,12 @@ function CreateTempleCards(temples) {
         templeInfo.append(templeHistory);
 
         card.append(templeInfo);
-    });
 }
+
+fetch(jsonURL)
+  .then( response => response.json() )
+  .then(temples => {
+      console.log(temples)
+      temples.temples.map( (temple) => {CreateTempleCard(temple);
+        });
+    });
