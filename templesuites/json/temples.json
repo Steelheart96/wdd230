@@ -13,11 +13,11 @@
                 "No patron housing available",
                 "Distribution center nearby"
             ],
-            "history": {
-                "Announced":  "7 April 1984",
-                "Groundbreaking": "27 February 1988",
-                "Dedicated": "25 April 1993"
-            },
+            "history": [
+                "Announced:  7 April 1984",
+                "Groundbreaking: 27 February 1988",
+                "Dedicated: 25 April 1993"
+            ],
             "ordinance_schedule": "Online appointments only. These are scheduled through the website.",
             "temple_closures": [
                 "Saturday, 1 October 2022",
@@ -37,12 +37,12 @@
             "services": [
                 "Temple Closed!"
             ],
-            "history": {
-                "Announced": "15 November 1968",
-                "Groundbreaking": "7 December 1968",
-                "Dedicated": "19 November 1974",
-                "Rededicated": "14 August 2022"
-            },
+            "history": [
+                "Announced: 15 November 1968",
+                "Groundbreaking: 7 December 1968",
+                "Dedicated: 19 November 1974",
+                "Rededicated: 14 August 2022"
+            ],
             "ordinance_schedule": "Temple Closed!",
             "temple_closures": [
                 "Current - August 30, 2022"
@@ -62,11 +62,11 @@
                 "No patron housing available",
                 "Distribution center nearby"
             ],
-            "history": {
-                "Announced": "10 April 2008",
-                "Groundbreaking": "13 November 2010",
-                "Dedicated": "2 March 2014"
-            },
+            "history": [
+                "Announced: 10 April 2008",
+                "Groundbreaking: 13 November 2010",
+                "Dedicated: 2 March 2014"
+            ],
             "ordinance_schedule": "Online appointments only. These are scheduled through the website.",
             "temple_closures": [
                 "Monday, 28 March 2022 - Monday, 11 April 2022",
@@ -91,12 +91,12 @@
                 "No patron housing available",
                 "Distribution center nearby"
             ],
-            "history": {
-                "Announced": "3 March 1937",
-                "Groundbreaking": "19 December 1939",
-                "Dedicated": "23 September 1945",
-                "Rededicated": "4 June 2017"
-            },
+            "history": [
+                "Announced: 3 March 1937",
+                "Groundbreaking: 19 December 1939",
+                "Dedicated: 23 September 1945",
+                "Rededicated: 4 June 2017"
+            ],
             "ordinance_schedule": "Online appointments only. These are scheduled through the website.",
             "temple_closures": [
                 "Tuesday, 28 June 2022 - Monday, 11 July 2022",
@@ -121,11 +121,11 @@
                 "No patron housing available",
                 "Distribution center nearby"
             ],
-            "history": {
-                "Announced": "3 October 1992",
-                "Groundbreaking": "9 October 1993",
-                "Dedicated": "13 October 1996"
-            },
+            "history": [
+                "Announced: 3 October 1992",
+                "Groundbreaking: 9 October 1993",
+                "Dedicated: 13 October 1996"
+            ],
             "ordinance_schedule":"Online appointments only. These are scheduled through the website.",
             "temple_closures": [
                 "Monday, 9 May 2022 - Monday, 23 May 2022",

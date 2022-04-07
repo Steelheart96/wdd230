@@ -291,6 +291,10 @@ main#temples, .mission-suites, .credits {
 .temple-card h2, .mission-suite h2, .image-credit h2 {
     margin: 1em;
 }
+.temple-card img, .mission-suite img, .image-credit img {
+    width: 90%;
+    margin: 1em;
+}
 .temple-sessions, .mission-suite-info, .credit-info {
     margin: 1em;
 }
@@ -308,6 +312,7 @@ main#temples, .mission-suites, .credits {
 }
 .more-temple-info, .mission-suite-more-info {
     margin: 1em;
+    display: none;
 }
 
 /* !!!--- Missionary content ---!!!*/

@@ -2,7 +2,6 @@ const jsonURL = 'https://steelheart96.github.io/wdd230/templesuites/json/temples
 const templeCards = document.getElementById("temples");
 
 function CreateTempleCard(temple) {
-    console.log(temple)
 
         let card = document.createElement('div');
         card.classList.add("temple-card");
@@ -44,7 +43,7 @@ function CreateTempleCard(temple) {
         moreInfoText.textContent = `More Information`;
 
         let moreInfoHamIcon = document.createElement('img');
-        moreInfoHamIcon.src = "../images/HamIcon.png";
+        moreInfoHamIcon.src = "https://steelheart96.github.io/wdd230/templesuites/images/HamIcon.png";
         moreInfoHamIcon.alt = "Dropdown Icon";
 
         templeDropDown.append(moreInfoText, moreInfoHamIcon);
@@ -112,7 +111,7 @@ function CreateTempleCard(temple) {
         templeHistoryTitle.textContent = `History`;
         templeHistory.append(templeHistoryTitle);
 
-        temple.temple_closures.map(closed => {
+        temple.history.map(history => {
             let templeHistoryItem = document.createElement('p');
             templeHistoryItem.textContent = closed;
             templeHistory.append(templeHistoryItem);
@@ -121,12 +120,17 @@ function CreateTempleCard(temple) {
         templeInfo.append(templeHistory);
 
         card.append(templeInfo);
+
+        templeCards.append(card);
+
+        moreInfoHamIcon.addEventListener('click', () => {
+            templeInfo.classList.toggle('responsive-block');
+        });
 }
 
 fetch(jsonURL)
   .then( response => response.json() )
   .then(temples => {
-      console.log(temples)
       temples.temples.map( (temple) => {CreateTempleCard(temple);
         });
     });
