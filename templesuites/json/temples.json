@@ -24,7 +24,8 @@
                 "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
                 "Saturday, 24 December 2022",
                 "Saturday, 31 December 2022"
-            ]
+            ],
+            "image": "SanDiegoTemple.jpg"
         },
         {
             "name": "Washington D.C. Temple",
@@ -33,7 +34,9 @@
             "email": "Temple Closed!",
             "state": "Closed for Renovations",
             "website": "https://www.churchofjesuschrist.org/temples/details/washington-d.c.-temple?lang=eng",
-            "services": "Temple Closed!",
+            "services": [
+                "Temple Closed!"
+            ],
             "history": {
                 "Announced": "15 November 1968",
                 "Groundbreaking": "7 December 1968",
@@ -43,7 +46,8 @@
             "ordinance_schedule": "Temple Closed!",
             "temple_closures": [
                 "Current - August 30, 2022"
-            ]
+            ],
+            "image": "WashingtonTemple.jpg"
         },
         {
             "name": "Gilbert Arizona Temple",
@@ -71,7 +75,8 @@
                 "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
                 "Saturday, 24 December 2022",
                 "Saturday, 31 December 2022"
-            ]
+            ],
+            "image": "GilbertAZTemple.jpg"
         },
         {
             "name": "Idaho Falls Idaho Temple",
@@ -100,7 +105,8 @@
                 "Thursday, 24 November 2022",
                 "Saturday, 24 December 2022",
                 "Saturday, 31 December 2022"
-            ]
+            ],
+            "image": "SanDiegoTemple.jpg"
         },
         {
             "name": "Mount Timpanogos Utah Temple",
@@ -128,7 +134,8 @@
                 "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
                 "Saturday, 24 December 2022",
                 "Saturday, 31 December 2022"
-            ]
+            ],
+            "image": "SanDiegoTemple.jpg"
         }
     ]
 }
