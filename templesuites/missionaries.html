@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Final Project, Temple Inn & Suites - Missionaries, for Eric Woll in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <title>Missionaries - Temple Inn & Suites</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <script defer src="js/responsivenav.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="header-temple-icon" src="images/TempleIcon.png" alt="Temple Inn and Suites Icon"
+            aria-disabled="true">
+        <h1>Temple Inn & Suites</h1>
+        <img class="ham-icon" src="images/HamIcon.png" alt="Dropdown Menu Icon" aria-disabled="true">
+        <nav class="main-nav">
+            <ul class="responsive-none">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./temple.html">Temples</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="missionaries">
+        <div class="mission-suites">
+            <h1>Missionary Accommodations</h1>
+            <div class="missionary-booking">
+                <h3>Want make a reservation?</h3>
+                <p>Click <a href="./reservations.html">Here</a> to reserve now!</p>
+            </div>
+            <div class="mission-suite">
+                <h2>Suite Name</h2>
+                <img src="images/placeholder.png" alt="Suite Picture">
+                <div class="mission-suite-info">
+                    <p>Beds: </p>
+                    <p>Rooms: </p>
+                </div>
+                <div class="mission-suite-dropdown">
+                    <h3>More Information</h3>
+                    <img src="images/HamIcon.png" alt="Dropdown Icon" aria-disabled="true">
+                </div>
+                <div class="mission-suite-more-info">
+                    <p>Bathrooms: </p>
+                    <p>Appliences: </p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us">
+            <form class="contact-form" method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label>Name: <input type="text" required></label>
+                    <label>Email* <input type="email" name="email" placeholder="myemail@email.org" required></label>
+                    <label>Message <textarea></textarea></label>
+                </fieldset>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-icon-name">
+            <img class="header-temple-icon" src="images/TempleIcon.png" alt="Temple Inn and Suites Icon"
+                aria-disabled="true">
+            <p>Temple Inn & Suites</p>
+        </div>
+        <p id="location">4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+        <a href="./imagecredits.html" id="image-credits">Image Credits</a>
+        <div class="maps-location">
+            <a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832559,-77.0977205,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318"
+                target="_blank"><img src="images/MapIcon.png" alt="Google Maps Icon" aria-disabled="true">
+                <p>Google Maps Location</p>
+            </a>
+        </div>
+        <div class="socials">
+            <a href="" target="_blank"><img src="images/FacebookIcon.png" alt="Facebook Icon" aria-disabled="true"></a>
+            <a href="" target="_blank"><img src="images/InstagramIcon.png" alt="Instagram Icon"
+                    aria-disabled="true"></a>
+            <a href="" target="_blank"><img src="images/TwitterIcon.png" alt="Twitter Icon" aria-disabled="true"></a>
+        </div>
+        <a href="https://openweathermap.org/api" id="weathermap-credits">OpenWeatherMap</a>
+    </footer>
+</body>
+
+</html>

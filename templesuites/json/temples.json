@@ -1,0 +1,134 @@
+{
+    "temples": [
+        {
+            "name": "San Diego California Temple",
+            "address": "7474 Charmant Dr San Diego CA 92122-5000 United States",
+            "phone": "(1) 858-622-0991",
+            "email": "Login to churchofjesuschrist.org to send an email",
+            "state": "Open",
+            "website": "https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple?lang=eng",
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": {
+                "Announced":  "7 April 1984",
+                "Groundbreaking": "27 February 1988",
+                "Dedicated": "25 April 1993"
+            },
+            "ordinance_schedule": "Online appointments only. These are scheduled through the website.",
+            "temple_closures": [
+                "Saturday, 1 October 2022",
+                "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022"
+            ]
+        },
+        {
+            "name": "Washington D.C. Temple",
+            "address": "9900 Stoneybrook Dr Kensington MD 20895-3199 United States",
+            "phone": "Temple Closed!",
+            "email": "Temple Closed!",
+            "state": "Closed for Renovations",
+            "website": "https://www.churchofjesuschrist.org/temples/details/washington-d.c.-temple?lang=eng",
+            "services": "Temple Closed!",
+            "history": {
+                "Announced": "15 November 1968",
+                "Groundbreaking": "7 December 1968",
+                "Dedicated": "19 November 1974",
+                "Rededicated": "14 August 2022"
+            },
+            "ordinance_schedule": "Temple Closed!",
+            "temple_closures": [
+                "Current - August 30, 2022"
+            ]
+        },
+        {
+            "name": "Gilbert Arizona Temple",
+            "address": "3301 S Greenfield Rd Gilbert AZ 85297 United States",
+            "phone": "(1) 480-822-5000",
+            "email": "Login to churchofjesuschrist.org to send an email",
+            "state": "Closed",
+            "website": "https://www.churchofjesuschrist.org/temples/details/gilbert-arizona-temple?lang=eng",
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": {
+                "Announced": "10 April 2008",
+                "Groundbreaking": "13 November 2010",
+                "Dedicated": "2 March 2014"
+            },
+            "ordinance_schedule": "Online appointments only. These are scheduled through the website.",
+            "temple_closures": [
+                "Monday, 28 March 2022 - Monday, 11 April 2022",
+                "Saturday, 1 October 2022",
+                "Monday, 3 October 2022 - Monday, 17 October 2022",
+                "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022"
+            ]
+        },
+        {
+            "name": "Idaho Falls Idaho Temple",
+            "address": "1000 Memorial Dr Idaho Falls ID 83402-3410 United States",
+            "phone": "(1) 208-522-7669",
+            "email":"Login to churchofjesuschrist.org to send an email",
+            "state": "Open",
+            "website": "https://www.churchofjesuschrist.org/temples/details/idaho-falls-idaho-temple?lang=eng",
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": {
+                "Announced": "3 March 1937",
+                "Groundbreaking": "19 December 1939",
+                "Dedicated": "23 September 1945",
+                "Rededicated": "4 June 2017"
+            },
+            "ordinance_schedule": "Online appointments only. These are scheduled through the website.",
+            "temple_closures": [
+                "Tuesday, 28 June 2022 - Monday, 11 July 2022",
+                "Saturday, 1 October 2022",
+                "Wednesday, 23 November 2022 (Limited Operations)",
+                "Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022"
+            ]
+        },
+        {
+            "name": "Mount Timpanogos Utah Temple",
+            "address": "742 N 900 E American Fork UT 84003-9124 United States",
+            "phone": "(1) 801-763-4540",
+            "email": "Login to churchofjesuschrist.org to send an email",
+            "state": "Open",
+            "website": "https://www.churchofjesuschrist.org/temples/details/mount-timpanogos-utah-temple?lang=eng",
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": {
+                "Announced": "3 October 1992",
+                "Groundbreaking": "9 October 1993",
+                "Dedicated": "13 October 1996"
+            },
+            "ordinance_schedule":"Online appointments only. These are scheduled through the website.",
+            "temple_closures": [
+                "Monday, 9 May 2022 - Monday, 23 May 2022",
+                "Saturday, 1 October 2022",
+                "Monday, 7 November 2022 - Tuesday, 22 November 2022",
+                "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022"
+            ]
+        }
+    ]
+}

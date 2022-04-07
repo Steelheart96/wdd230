@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Final Project, Temple Inn & Suites - Home, for Eric Woll in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <title>Home - Temple Inn & Suites</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <script defer src="js/responsivenav.js"></script>
+    <script defer src="js/randomizeheroimage.js"></script>
+    <script defer src="js/responsivehomebuttons.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="header-temple-icon" src="images/TempleIcon.png" alt="Temple Inn and Suites Icon"
+            aria-disabled="true">
+        <h1>Temple Inn & Suites</h1>
+        <img class="ham-icon" src="images/HamIcon.png" alt="Dropdown Menu Icon" aria-disabled="true">
+        <nav class="main-nav">
+            <ul class="responsive-none">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./temple.html">Temples</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home">
+        <div class="hero-image">
+            <!-- Image is placed through css background -->
+            <a class="reserve-btn" href="./reservations.html">Reserve</a>
+        </div>
+
+        <div class="information">
+            <nav class="info-nav">
+                <ul>
+                    <li><a id="info-btn-1">San Diego</a></li>
+                    <li><a id="info-btn-2">Washington</a></li>
+                    <li><a id="info-btn-3">Arizona</a></li>
+                </ul>
+            </nav>
+            <div class="info responsive-block" id="info-content-1">
+                <h3>San Diego Temple</h3>
+                <img src="images/SanDiegoTemple.jpg" alt="Temple">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, exercitationem ullam facilis
+                    iste, inventore omnis sit natus totam quaerat libero sint odit quos error modi eos quo, quasi soluta
+                    consectetur!</p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="info" id="info-content-2">
+                <h3>Washington DC Temple</h3>
+                <img src="images/WashingtonTemple.jpg" alt="Temple">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, exercitationem ullam facilis
+                    iste, inventore omnis sit natus totam quaerat libero sint odit quos error modi eos quo, quasi soluta
+                    consectetur!</p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="info" id="info-content-3">
+                <h3>Gilbert Arizona Temple</h3>
+                <img src="images/GilbertAZTemple.jpg" alt="Temple">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, exercitationem ullam facilis
+                    iste, inventore omnis sit natus totam quaerat libero sint odit quos error modi eos quo, quasi soluta
+                    consectetur!</p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+
+        <div class="weather">
+            <nav class="weather-nav">
+                <ul>
+                    <li><a id="daily-weather-btn">Daily</a></li>
+                    <li><a id="weekly-weather-btn">Weekly</a></li>
+                </ul>
+            </nav>
+            <div class="weather-info responsive-grid" id="daily-weather">
+                <img src="images/placeholder.png" alt="">
+                <div class="conditions">
+                    <h3 id="weather-condition">Condition</h3>
+                    <hr>
+                    <p id="weather-degrees">Degrees: </p>
+                    <p id="weather-wind-speed">Feels Like: </p>
+                    <p id="weather-feels-like">Humidity: </p>
+                </div>
+            </div>
+            <div class="weather-info" id="weekly-weather">
+                <ul class="weekly-weather-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <div class="inn-info">
+        <nav class="inn-info-nav">
+            <ul>
+                <li><a id="social-button">Our Socials</a></li>
+                <li><a id="contact-button">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="inn-info-content responsive-grid" id="social-info">
+            <div class="social-icons">
+                <a href="" target="_blank"><img src="images/FacebookIcon.png" alt="Facebook Icon" aria-disabled="true"></a>
+                <a href="" target="_blank"><img src="images/InstagramIcon.png" alt="Instagram Icon" aria-disabled="true"></a>
+                <a href="" target="_blank"><img src="images/TwitterIcon.png" alt="Twitter Icon" aria-disabled="true"></a>
+            </div>
+            </div>
+        <div class="inn-info-content" id="contact-info">
+            <p><strong>Email:</strong> <a href="mailto: templeinnsuites@info.com">templeinnsuites@info.com</a></p>
+            <p><strong>Phone Number:</strong> 800-981-1932</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-icon-name">
+            <img class="header-temple-icon" src="images/TempleIcon.png" alt="Temple Inn and Suites Icon"
+            aria-disabled="true">
+            <p>Temple Inn & Suites</p>
+        </div>
+        <p id="location">4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+        <a href="./imagecredits.html" id="image-credits">Image Credits</a>
+        <div class="maps-location">
+            <a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832559,-77.0977205,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318" target="_blank"><img src="images/MapIcon.png" alt="Google Maps Icon" aria-disabled="true"><p>Google Maps Location</p></a>
+        </div>
+        <div class="socials">
+            <a href="" target="_blank"><img src="images/FacebookIcon.png" alt="Facebook Icon" aria-disabled="true"></a>
+            <a href="" target="_blank"><img src="images/InstagramIcon.png" alt="Instagram Icon" aria-disabled="true"></a>
+            <a href="" target="_blank"><img src="images/TwitterIcon.png" alt="Twitter Icon" aria-disabled="true"></a>
+        </div>
+        <a href="https://openweathermap.org/api" id="weathermap-credits">OpenWeatherMap</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=PT+Serif&family=Work+Sans:wght@300&display=swap');
+
+:root {
+    --Black-Translucent: rgba(0, 0, 0, 0.397);
+    --Dark-Grey: rgb(148, 148, 148);
+    --Grey: rgb(191, 191, 191);
+    --Light-Grey: rgb(236, 236, 236);
+    --White: rgb(249, 249, 249);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Serif', serif;
+}
+nav, button{
+    font-family: 'Libre Franklin', sans-serif;
+}
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+a {
+    color: black;
+}
+body {
+    background-color: var(--White);
+}
+
+/* !!!--- Header Content ---!!! */
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    font-size: .8em;
+    background-color: var(--Grey);
+}
+.header-temple-icon {
+    width: 4em;
+}
+.ham-icon {
+    width: 3em;
+}
+.main-nav {
+    grid-column: 2;
+}
+.main-nav ul {
+    justify-items: center;
+    list-style: none;
+}
+.main-nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    padding: .2em;
+}
+
+/* !!!--- HOME PAGE CONTENT ---!!! */
+
+/* --- Hero Content --- */
+
+/* Hero image */
+.hero-image {
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-clip:padding-box;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: -4em;
+}
+
+/* Reserve Button */
+.reserve-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    padding: .5em;
+    border-radius: 1em;
+    background-color: var(--Black-Translucent);
+    color: var(--White);
+}
+
+
+/* --- Information Content ---*/
+
+/* Information Nav*/
+.information {
+    display: inline-block;
+}
+
+.info-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0em 1em 0em 1em;
+
+}
+.info-nav ul li {
+    padding: 1em;
+    border-radius: 1.5em;
+    background-color: grey;
+}
+.info-nav ul li a {
+    text-decoration: none;
+    color: var(--White);
+}
+.information h3 {
+    text-align: center;
+}
+
+/* Information info */
+.info {
+    padding: 1em;
+    display: none;
+}
+.info img {
+    width: 100%;
+}
+.info p {
+    padding: 0em 1em 0em 1em;
+}
+.info a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* --- Weather Content --- */
+
+.weather {
+    background-color: var(--Light-Grey);
+}
+.weather-info {
+    display: none;
+}
+
+/* Weather Navigation */
+.weather-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em
+}
+.weather-nav ul li {
+    padding: 1em;
+    border-radius: 1.5em;
+    background-color: var(--Dark-Grey);
+}
+.weather-nav ul li a {
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 500;
+}
+
+/* Daily Weather information*/
+#daily-weather {
+    justify-content: center;
+}
+#daily-weather img {
+    width: 15em;
+}
+#daily-weather h3 {
+    text-align: center;
+}
+
+/* Weekly Weather */
+
+
+/* --- Contact/Social Information --- */
+
+.inn-info-content {
+    display: none;
+}
+.inn-info h2 {
+    text-align: center;
+}
+.inn-info-nav ul {
+    padding: 1em;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.inn-info-nav ul li {
+    padding: 1em;
+    border-radius: 1.5em;
+    background-color: var(--Dark-Grey);
+}
+.inn-info-nav ul li a {
+    color: var(--White);
+}
+
+/* Social */
+#social-info {
+    padding-bottom: 3em;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Contact */
+#contact-info {
+    justify-content: center;
+}
+#contact-info a {
+    display: inline-block;
+    text-align: center;
+}
+
+/* !!!--- RESERVATION PAGE CONTENT ---!!! */
+
+/*  Reservation form*/
+main#reservations {
+    display: flex;
+    flex-direction: column;
+}
+.missionaries {
+    justify-items: center;
+}
+main#reservations h1 {
+    text-align: center;
+
+}
+.reservation-form, .contact-form {
+    max-width: 350px;
+    padding-bottom: 1em;
+    margin: auto;
+}
+.reservation-form > fieldset, .contact-form > fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: .5em;
+    border-radius: 1em;
+    border-color: var(--Grey);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-color: var(--Light-Grey);
+}
+.reservation-form > fieldset > legend, .contact-form > fieldset > legend {
+    font-size: 3em;
+    font-weight: 500;
+}
+.reservation-form > fieldset > label, .contact-form > fieldset > label {
+    cursor: pointer;
+    font-size: 1em;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+}
+.reservation-form > fieldset > label > textarea, .contact-form > fieldset > label > textarea {
+    resize: none;
+    min-height: 6em;
+    border-radius: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    border-width: .12em;
+    max-width: 50em;
+}
+.submit-btn {
+    margin-left: 5%;
+    border-radius: .5em;
+    padding: .3em;
+    font-size: 1em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+}
+.submit-btn:active {
+    box-shadow: inset 0px 0px 16px 4px rgba(0,0,0,0.42)
+}
+
+/* !!!--- Card Page Content ---!!! */
+
+main#temples, .mission-suites, .credits {
+    display: flex;
+    flex-direction: column;
+}
+
+.temple-card, .mission-suite, .image-credit {
+    border-style: solid;
+    border-color: black;
+    border-radius: 1em;
+    margin: 2em;
+    background-color: var(--Grey);
+}
+.temple-card h2, .mission-suite h2, .image-credit h2 {
+    margin: 1em;
+}
+.temple-sessions, .mission-suite-info, .credit-info {
+    margin: 1em;
+}
+.temple-info-dropdown, .mission-suite-dropdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: grey;
+    color: white;
+    padding-left: 1em;
+}
+.temple-info-dropdown img, .mission-suite-dropdown img {
+    width: 2em;
+}
+.more-temple-info, .mission-suite-more-info {
+    margin: 1em;
+}
+
+/* !!!--- Missionary content ---!!!*/
+
+.mission-suites h1 {
+    text-align: center;
+}
+.missionary-booking {
+    display: flex;
+    padding: 0em 1em 0em 1em;
+    border-style: solid;
+    border-width: thin;
+    background-color: var(--Light-Grey);
+    border-color: black;
+}
+
+/* !!!--- Inn Services ---!!!*/
+
+.amenities, .services, .receptions, .temple-missionary {
+    padding: 1em;
+    border-style: solid;
+    border-color: var(--Dark-Grey);
+    border-radius: 1em;
+    margin: 1em;
+    line-height: 1.5em;
+}
+.amenities h2, .services h2, .receptions h2, .temple-missionary h2 {
+    text-decoration: underline;
+}
+.receptions a, .temple-missionary a{
+    border-style: solid;
+    border-color: var(--Grey);
+    padding: .2em;
+    border-radius: .8em;
+    text-decoration: none;
+}
+
+/* !!!--- Reservation Thank You content ---!!! */
+main#thank-you {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-card {
+    border-style: solid;
+    border-color: black;
+    border-radius: 1em;
+    margin: 1em;
+}
+.thank-you-card h2 {
+    text-align: center;
+}
+.thank-you-card p {
+    margin: 1em;
+}
+
+/* !!!--- Footer Content ---!!! */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--Grey);
+    padding: .5em 1em 1em 1em;
+}
+.footer-icon-name {
+    display: flex;
+    align-items: center;
+}
+.footer-icon-name p {
+    font-size: 1.5em;
+}
+#location {
+    grid-column: 1;
+    grid-row: 2;
+}
+#image-credits {
+    grid-column: 1;
+    grid-row: 3;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+footer #separator {
+    grid-column: 1/3;
+    grid-row: 2;
+    height: .1em;
+    width: 100%;
+}
+
+/* Maps content */
+.maps-location a {
+    justify-content: center;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-decoration: none;
+}
+.maps-location img {
+    width: 2em;
+}
+
+/* Socials */
+.socials {
+    display: flex;
+    gap: .3em;
+    justify-content: center;
+}
+.socials a img {
+    width: 2.5em;
+}
+
+/* Openweatherapi */
+#weathermap-credits {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* --- Responsive classes --- */
+
+.responsive-block {
+    display: block;
+}
+.responsive-none {
+    display: none;
+}
+.responsive-grid {
+    display: grid;
+}
+.responsive-flex {
+    display: flex;
+}
